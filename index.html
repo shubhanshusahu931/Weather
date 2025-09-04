@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahu Weather – 3 Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="weather.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Sahu Weather</h1>
+          <div class="subtitle">Gradient 3‑card weather UI</div>
+        </div>
+      </div>
+
+      <div class="search" role="search">
+        <input id="q" type="text" placeholder="City or place… (e.g., London)" value="London" aria-label="Search city">
+        <button class="btn" id="go">Get Weather</button>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- Morning style card -->
+      <article class="card c1" id="card1">
+        <div class="title">Current</div>
+        <div class="time" id="time1">--:--</div>
+        <div class="icon" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="cloud"></div>
+          <div class="rain" id="rain1"></div>
+        </div>
+        <div class="temp" id="t1">--°</div>
+        <div class="muted" id="cond1">Loading…</div>
+        <div class="day" id="day1">—</div>
+      </article>
+
+      <!-- Noon style card -->
+      <article class="card c2" id="card2">
+        <div class="title">Feels Like</div>
+        <div class="time" id="time2">--:--</div>
+        <div class="icon" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="cloud"></div>
+          <div class="rain" id="rain2"></div>
+        </div>
+        <div class="temp" id="t2">--°</div>
+        <div class="muted" id="cond2">—</div>
+        <div class="day" id="day2">—</div>
+      </article>
+
+      <!-- Evening stormy style card -->
+      <article class="card c3" id="card3">
+        <div class="title">Air & Wind</div>
+        <div class="time" id="time3">--:--</div>
+        <div class="icon" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="cloud"></div>
+          <div class="rain" id="rain3"></div>
+        </div>
+        <div class="row" style="margin:10px 0 0">
+          <div class="pill" id="p1">Wind —</div>
+          <div class="pill" id="p2">Humidity —</div>
+          <div class="pill" id="p3">UV —</div>
+        </div>
+        <div class="temp" id="t3" style="position:absolute; right:22px; bottom:24px; font-size:56px">--°C</div>
+        <div class="day" id="day3">—</div>
+      </article>
+    </section>
+  </div>
+  <script src="weather.js"></script>
+
+</body>
+</html>
